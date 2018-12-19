@@ -1,0 +1,56 @@
+c:\users\dell\documents\visual studio 2015\Projects\uiuiui\uiuiui\bin\Debug\uiuiui.exe.config
+c:\users\dell\documents\visual studio 2015\Projects\uiuiui\uiuiui\bin\Debug\uiuiui.exe
+c:\users\dell\documents\visual studio 2015\Projects\uiuiui\uiuiui\bin\Debug\uiuiui.pdb
+c:\users\dell\documents\visual studio 2015\Projects\uiuiui\uiuiui\obj\Debug\uiuiui.Form1.resources
+c:\users\dell\documents\visual studio 2015\Projects\uiuiui\uiuiui\obj\Debug\uiuiui.Properties.Resources.resources
+c:\users\dell\documents\visual studio 2015\Projects\uiuiui\uiuiui\obj\Debug\uiuiui.csproj.GenerateResource.Cache
+c:\users\dell\documents\visual studio 2015\Projects\uiuiui\uiuiui\obj\Debug\uiuiui.exe
+c:\users\dell\documents\visual studio 2015\Projects\uiuiui\uiuiui\obj\Debug\uiuiui.pdb
+c:\users\dell\documents\visual studio 2015\Projects\uiuiui\uiuiui\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+c:\users\dell\documents\visual studio 2015\Projects\uiuiui\uiuiui\bin\Debug\Bunifu_UI_v1.5.3.dll
+c:\users\dell\documents\visual studio 2015\Projects\uiuiui\uiuiui\obj\Debug\uiuiui.Form2.resources
+C:\Users\DELL\documents\visual studio 2015\Projects\uiuiui\uiuiui\obj\Debug\uiuiui.qlkh.resources
+C:\Users\DELL\documents\visual studio 2015\Projects\uiuiui\uiuiui\bin\Debug\Bunifu.UI.WinForm.BunifuShadowPanel.dll
+C:\Users\DELL\documents\visual studio 2015\Projects\uiuiui\uiuiui\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+C:\Users\DELL\documents\visual studio 2015\Projects\uiuiui\uiuiui\obj\Debug\uiuiui.bcn.resources
+C:\Users\DELL\documents\visual studio 2015\Projects\uiuiui\uiuiui\obj\Debug\uiuiui.qlnv.resources
+C:\Users\DELL\documents\visual studio 2015\Projects\uiuiui\uiuiui\bin\Debug\LiveCharts.dll
+C:\Users\DELL\documents\visual studio 2015\Projects\uiuiui\uiuiui\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\DELL\documents\visual studio 2015\Projects\uiuiui\uiuiui\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\DELL\documents\visual studio 2015\Projects\uiuiui\uiuiui\bin\Debug\LiveCharts.pdb
+C:\Users\DELL\documents\visual studio 2015\Projects\uiuiui\uiuiui\bin\Debug\LiveCharts.xml
+C:\Users\DELL\documents\visual studio 2015\Projects\uiuiui\uiuiui\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\DELL\documents\visual studio 2015\Projects\uiuiui\uiuiui\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\DELL\documents\visual studio 2015\Projects\uiuiui\uiuiui\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\DELL\documents\visual studio 2015\Projects\uiuiui\uiuiui\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\DELL\documents\visual studio 2015\Projects\uiuiui\uiuiui\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\DELL\documents\visual studio 2015\Projects\uiuiui\uiuiui\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+C:\Users\DELL\documents\visual studio 2015\Projects\uiuiui\uiuiui\obj\Debug\uiuiui.csprojResolveAssemblyReference.cache
+C:\Users\DELL\documents\visual studio 2015\Projects\uiuiui\uiuiui\obj\Debug\uiuiui.Form3.resources
+C:\Users\DELL\documents\visual studio 2015\Projects\uiuiui\uiuiui\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\DELL\documents\visual studio 2015\Projects\uiuiui\uiuiui\bin\Debug\MaterialSkin.dll
+D:\Exercise\uiuiui\uiuiui\bin\Debug\uiuiui.exe.config
+D:\Exercise\uiuiui\uiuiui\bin\Debug\uiuiui.exe
+D:\Exercise\uiuiui\uiuiui\bin\Debug\uiuiui.pdb
+D:\Exercise\uiuiui\uiuiui\bin\Debug\LiveCharts.dll
+D:\Exercise\uiuiui\uiuiui\bin\Debug\LiveCharts.WinForms.dll
+D:\Exercise\uiuiui\uiuiui\bin\Debug\LiveCharts.Wpf.dll
+D:\Exercise\uiuiui\uiuiui\bin\Debug\LiveCharts.pdb
+D:\Exercise\uiuiui\uiuiui\bin\Debug\LiveCharts.xml
+D:\Exercise\uiuiui\uiuiui\bin\Debug\LiveCharts.WinForms.pdb
+D:\Exercise\uiuiui\uiuiui\bin\Debug\LiveCharts.WinForms.xml
+D:\Exercise\uiuiui\uiuiui\bin\Debug\LiveCharts.Wpf.pdb
+D:\Exercise\uiuiui\uiuiui\bin\Debug\LiveCharts.Wpf.xml
+D:\Exercise\uiuiui\uiuiui\obj\Debug\uiuiui.csprojAssemblyReference.cache
+D:\Exercise\uiuiui\uiuiui\obj\Debug\uiuiui.bcn.resources
+D:\Exercise\uiuiui\uiuiui\obj\Debug\uiuiui.Properties.Resources.resources
+D:\Exercise\uiuiui\uiuiui\obj\Debug\uiuiui.csproj.GenerateResource.cache
+D:\Exercise\uiuiui\uiuiui\obj\Debug\uiuiui.csproj.CoreCompileInputs.cache
+D:\Exercise\uiuiui\uiuiui\obj\Debug\uiuiui.csproj.CopyComplete
+D:\Exercise\uiuiui\uiuiui\obj\Debug\uiuiui.exe
+D:\Exercise\uiuiui\uiuiui\obj\Debug\uiuiui.pdb
+D:\Exercise\uiuiui\uiuiui\obj\Debug\uiuiui.Login.resources
+D:\Exercise\uiuiui\uiuiui\obj\Debug\uiuiui.Menu.resources
+D:\Exercise\uiuiui\uiuiui\obj\Debug\uiuiui.EnterBillForm.resources
+D:\Exercise\uiuiui\uiuiui\obj\Debug\uiuiui.ProductManagement.resources
+D:\Exercise\uiuiui\uiuiui\obj\Debug\uiuiui.EmployeeManagement.resources
