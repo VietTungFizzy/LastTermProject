@@ -51,15 +51,17 @@
             // pic_RedStripe
             // 
             this.pic_RedStripe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
-            this.pic_RedStripe.Location = new System.Drawing.Point(-2, -3);
+            this.pic_RedStripe.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pic_RedStripe.BackgroundImage")));
+            this.pic_RedStripe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pic_RedStripe.Location = new System.Drawing.Point(-7, -26);
             this.pic_RedStripe.Name = "pic_RedStripe";
-            this.pic_RedStripe.Size = new System.Drawing.Size(449, 180);
+            this.pic_RedStripe.Size = new System.Drawing.Size(553, 180);
             this.pic_RedStripe.TabIndex = 0;
             this.pic_RedStripe.TabStop = false;
             // 
             // pn_Bar
             // 
-            this.pn_Bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(56)))), ((int)(((byte)(44)))));
+            this.pn_Bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(53)))), ((int)(((byte)(40)))));
             this.pn_Bar.Controls.Add(this.imgb_Exit);
             this.pn_Bar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pn_Bar.Location = new System.Drawing.Point(0, 0);
@@ -71,9 +73,9 @@
             // 
             this.imgb_Exit.Image = ((System.Drawing.Image)(resources.GetObject("imgb_Exit.Image")));
             this.imgb_Exit.ImageActive = null;
-            this.imgb_Exit.Location = new System.Drawing.Point(414, 4);
+            this.imgb_Exit.Location = new System.Drawing.Point(418, 5);
             this.imgb_Exit.Name = "imgb_Exit";
-            this.imgb_Exit.Size = new System.Drawing.Size(23, 23);
+            this.imgb_Exit.Size = new System.Drawing.Size(21, 21);
             this.imgb_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgb_Exit.TabIndex = 0;
             this.imgb_Exit.TabStop = false;
@@ -142,7 +144,7 @@
             this.lbl_Password.ForeColor = System.Drawing.Color.Black;
             this.lbl_Password.Location = new System.Drawing.Point(21, 84);
             this.lbl_Password.Name = "lbl_Password";
-            this.lbl_Password.Size = new System.Drawing.Size(62, 18);
+            this.lbl_Password.Size = new System.Drawing.Size(61, 18);
             this.lbl_Password.TabIndex = 2;
             this.lbl_Password.Text = "Password";
             // 
@@ -196,12 +198,13 @@
             this.but_Login.TabIndex = 2;
             this.but_Login.Text = "Login";
             this.but_Login.UseVisualStyleBackColor = false;
+            this.but_Login.Click += new System.EventHandler(this.but_Login_Click);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(56)))), ((int)(((byte)(44)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(53)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(444, 343);
             this.Controls.Add(this.pn_Bar);
             this.Controls.Add(this.but_Login);

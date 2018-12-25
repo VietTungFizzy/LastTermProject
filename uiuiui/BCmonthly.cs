@@ -10,21 +10,15 @@ using System.Windows.Forms;
 
 namespace uiuiui
 {
-    public partial class Login : Form
+    public partial class BCmonthly : Form
     {
-        public Login()
+        public BCmonthly()
         {
             InitializeComponent();
         }
+
         private void imgb_Exit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
-
-        private void but_Login_Click(object sender, EventArgs e)
-        {
-           Menu a = new Menu();
-            a.Show();
             this.Hide();
         }
     }

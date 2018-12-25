@@ -32,9 +32,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EnterBillForm));
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.toptab = new System.Windows.Forms.Panel();
+            this.imgb_Exit = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tenNVlbl = new System.Windows.Forms.Label();
+            this.datetimeLbl = new System.Windows.Forms.Label();
+            this.tongtienLbl = new System.Windows.Forms.Label();
+            this.tienthuaLbl = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -45,6 +50,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.materialDivider1 = new MaterialSkin.Controls.MaterialDivider();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -56,11 +63,10 @@
             this.bunifuImageButton4 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton9 = new Bunifu.Framework.UI.BunifuImageButton();
             this.button3 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.toptab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgb_Exit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -73,7 +79,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuDragControl1
@@ -86,14 +92,39 @@
             // toptab
             // 
             this.toptab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(56)))), ((int)(((byte)(44)))));
+            this.toptab.Controls.Add(this.imgb_Exit);
             this.toptab.Controls.Add(this.bunifuImageButton2);
             this.toptab.Controls.Add(this.textBox1);
-            this.toptab.Controls.Add(this.bunifuImageButton1);
             this.toptab.Dock = System.Windows.Forms.DockStyle.Top;
             this.toptab.Location = new System.Drawing.Point(0, 0);
             this.toptab.Name = "toptab";
             this.toptab.Size = new System.Drawing.Size(813, 36);
             this.toptab.TabIndex = 1;
+            // 
+            // imgb_Exit
+            // 
+            this.imgb_Exit.Image = ((System.Drawing.Image)(resources.GetObject("imgb_Exit.Image")));
+            this.imgb_Exit.ImageActive = null;
+            this.imgb_Exit.Location = new System.Drawing.Point(785, 7);
+            this.imgb_Exit.Name = "imgb_Exit";
+            this.imgb_Exit.Size = new System.Drawing.Size(21, 21);
+            this.imgb_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgb_Exit.TabIndex = 7;
+            this.imgb_Exit.TabStop = false;
+            this.imgb_Exit.Zoom = 10;
+            this.imgb_Exit.Click += new System.EventHandler(this.imgb_Exit_Click);
+            // 
+            // bunifuImageButton2
+            // 
+            this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
+            this.bunifuImageButton2.ImageActive = null;
+            this.bunifuImageButton2.Location = new System.Drawing.Point(235, 6);
+            this.bunifuImageButton2.Name = "bunifuImageButton2";
+            this.bunifuImageButton2.Size = new System.Drawing.Size(26, 26);
+            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton2.TabIndex = 3;
+            this.bunifuImageButton2.TabStop = false;
+            this.bunifuImageButton2.Zoom = 10;
             // 
             // textBox1
             // 
@@ -109,23 +140,14 @@
             this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
             this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(782, 8);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(23, 23);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 1;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.tenNVlbl);
+            this.panel1.Controls.Add(this.datetimeLbl);
+            this.panel1.Controls.Add(this.tongtienLbl);
+            this.panel1.Controls.Add(this.tienthuaLbl);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -139,14 +161,57 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(224, 532);
             this.panel1.TabIndex = 2;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // tenNVlbl
+            // 
+            this.tenNVlbl.AutoSize = true;
+            this.tenNVlbl.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tenNVlbl.ForeColor = System.Drawing.Color.Black;
+            this.tenNVlbl.Location = new System.Drawing.Point(84, 22);
+            this.tenNVlbl.Name = "tenNVlbl";
+            this.tenNVlbl.Size = new System.Drawing.Size(75, 14);
+            this.tenNVlbl.TabIndex = 15;
+            this.tenNVlbl.Text = "ho van ten";
+            // 
+            // datetimeLbl
+            // 
+            this.datetimeLbl.AutoSize = true;
+            this.datetimeLbl.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datetimeLbl.ForeColor = System.Drawing.Color.Black;
+            this.datetimeLbl.Location = new System.Drawing.Point(84, 54);
+            this.datetimeLbl.Name = "datetimeLbl";
+            this.datetimeLbl.Size = new System.Drawing.Size(110, 14);
+            this.datetimeLbl.TabIndex = 14;
+            this.datetimeLbl.Text = "ngay thang nam";
+            // 
+            // tongtienLbl
+            // 
+            this.tongtienLbl.AutoSize = true;
+            this.tongtienLbl.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tongtienLbl.ForeColor = System.Drawing.Color.Black;
+            this.tongtienLbl.Location = new System.Drawing.Point(129, 366);
+            this.tongtienLbl.Name = "tongtienLbl";
+            this.tongtienLbl.Size = new System.Drawing.Size(39, 14);
+            this.tongtienLbl.TabIndex = 13;
+            this.tongtienLbl.Text = "0000";
+            // 
+            // tienthuaLbl
+            // 
+            this.tienthuaLbl.AutoSize = true;
+            this.tienthuaLbl.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tienthuaLbl.ForeColor = System.Drawing.Color.Black;
+            this.tienthuaLbl.Location = new System.Drawing.Point(129, 319);
+            this.tienthuaLbl.Name = "tienthuaLbl";
+            this.tienthuaLbl.Size = new System.Drawing.Size(39, 14);
+            this.tienthuaLbl.TabIndex = 6;
+            this.tienthuaLbl.Text = "0000";
             // 
             // textBox2
             // 
-            this.textBox2.Font = new System.Drawing.Font("Verdana", 12F);
-            this.textBox2.Location = new System.Drawing.Point(118, 280);
+            this.textBox2.Font = new System.Drawing.Font("Verdana", 9F);
+            this.textBox2.Location = new System.Drawing.Point(87, 264);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(96, 27);
+            this.textBox2.Size = new System.Drawing.Size(132, 22);
             this.textBox2.TabIndex = 12;
             // 
             // pictureBox2
@@ -181,7 +246,6 @@
             this.button2.TabIndex = 9;
             this.button2.Text = "In hóa đơn";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -203,9 +267,9 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(56)))), ((int)(((byte)(44)))));
             this.label3.Font = new System.Drawing.Font("Verdana", 10F);
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(-9, 319);
+            this.label3.Location = new System.Drawing.Point(-8, 313);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 28);
+            this.label3.Size = new System.Drawing.Size(90, 25);
             this.label3.TabIndex = 7;
             this.label3.Text = " Tiền thừa:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -217,11 +281,11 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(56)))), ((int)(((byte)(44)))));
             this.label2.Font = new System.Drawing.Font("Verdana", 10F);
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(-4, 279);
+            this.label2.Location = new System.Drawing.Point(-3, 263);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 28);
+            this.label2.Size = new System.Drawing.Size(84, 25);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Tiền khách trả:";
+            this.label2.Text = "Khách trả:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
@@ -233,7 +297,7 @@
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label1.Location = new System.Drawing.Point(-5, 360);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 28);
+            this.label1.Size = new System.Drawing.Size(87, 25);
             this.label1.TabIndex = 5;
             this.label1.Text = "Tổng tiền:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -261,6 +325,32 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(561, 260);
             this.panel2.TabIndex = 4;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button7.Location = new System.Drawing.Point(501, 131);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(27, 127);
+            this.button7.TabIndex = 14;
+            this.button7.Text = "Iced";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button6.Location = new System.Drawing.Point(501, 0);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(27, 131);
+            this.button6.TabIndex = 13;
+            this.button6.Text = "Hot";
+            this.button6.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
@@ -403,62 +493,36 @@
             this.button3.Text = "S";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // dataGridView1
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button6.Location = new System.Drawing.Point(501, 0);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(27, 131);
-            this.button6.TabIndex = 13;
-            this.button6.Text = "Hot";
-            this.button6.UseVisualStyleBackColor = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.GridColor = System.Drawing.Color.Black;
+            this.dataGridView1.Location = new System.Drawing.Point(240, 36);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(556, 266);
+            this.dataGridView1.TabIndex = 5;
             // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button7.Location = new System.Drawing.Point(501, 131);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(27, 127);
-            this.button7.TabIndex = 14;
-            this.button7.Text = "Iced";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // bunifuImageButton2
-            // 
-            this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
-            this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(235, 6);
-            this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(26, 26);
-            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton2.TabIndex = 3;
-            this.bunifuImageButton2.TabStop = false;
-            this.bunifuImageButton2.Zoom = 10;
-            // 
-            // Form3
+            // EnterBillForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(56)))), ((int)(((byte)(44)))));
             this.ClientSize = new System.Drawing.Size(813, 580);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.materialDivider1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toptab);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form3";
+            this.Name = "EnterBillForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
             this.toptab.ResumeLayout(false);
             this.toptab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgb_Exit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -472,7 +536,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -487,7 +551,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel toptab;
         private System.Windows.Forms.TextBox textBox1;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private MaterialSkin.Controls.MaterialDivider materialDivider1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
@@ -507,5 +570,11 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
+        private Bunifu.Framework.UI.BunifuImageButton imgb_Exit;
+        private System.Windows.Forms.Label tenNVlbl;
+        private System.Windows.Forms.Label datetimeLbl;
+        private System.Windows.Forms.Label tongtienLbl;
+        private System.Windows.Forms.Label tienthuaLbl;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

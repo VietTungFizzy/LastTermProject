@@ -33,20 +33,20 @@
             this.KhupdateBtn = new System.Windows.Forms.Button();
             this.KhinsertBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBoxvitri = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxcalv = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxsex = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbmanv = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbsdt = new System.Windows.Forms.TextBox();
+            this.tbtennv = new System.Windows.Forms.TextBox();
+            this.tbcmnd = new System.Windows.Forms.TextBox();
+            this.tbluong = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -79,6 +79,7 @@
             this.KHdeleteBtn.TabIndex = 5;
             this.KHdeleteBtn.Text = "Xóa NV";
             this.KHdeleteBtn.UseVisualStyleBackColor = true;
+            this.KHdeleteBtn.Click += new System.EventHandler(this.KHdeleteBtn_Click);
             // 
             // KhupdateBtn
             // 
@@ -108,41 +109,40 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.comboBox3);
+            this.panel2.Controls.Add(this.comboBoxvitri);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.comboBox2);
+            this.panel2.Controls.Add(this.comboBoxcalv);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.comboBoxsex);
             this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.textBox5);
+            this.panel2.Controls.Add(this.tbmanv);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.tbsdt);
+            this.panel2.Controls.Add(this.tbtennv);
+            this.panel2.Controls.Add(this.tbcmnd);
+            this.panel2.Controls.Add(this.tbluong);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Enabled = false;
             this.panel2.Location = new System.Drawing.Point(0, 52);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(760, 90);
             this.panel2.TabIndex = 3;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // comboBox3
+            // comboBoxvitri
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Waiter"});
-            this.comboBox3.Location = new System.Drawing.Point(448, 16);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(77, 26);
-            this.comboBox3.TabIndex = 33;
-            this.comboBox3.Text = "Waiter";
+            this.comboBoxvitri.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxvitri.FormattingEnabled = true;
+            this.comboBoxvitri.Items.AddRange(new object[] {
+            "Waiter",
+            "Manager"});
+            this.comboBoxvitri.Location = new System.Drawing.Point(448, 16);
+            this.comboBoxvitri.Name = "comboBoxvitri";
+            this.comboBoxvitri.Size = new System.Drawing.Size(77, 26);
+            this.comboBoxvitri.TabIndex = 33;
+            this.comboBoxvitri.Text = "Waiter";
             // 
             // label7
             // 
@@ -154,18 +154,18 @@
             this.label7.TabIndex = 32;
             this.label7.Text = "Ca";
             // 
-            // comboBox2
+            // comboBoxcalv
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboBoxcalv.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxcalv.FormattingEnabled = true;
+            this.comboBoxcalv.Items.AddRange(new object[] {
             "Sáng",
             "Tối"});
-            this.comboBox2.Location = new System.Drawing.Point(448, 54);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(77, 26);
-            this.comboBox2.TabIndex = 31;
-            this.comboBox2.Text = "Sáng";
+            this.comboBoxcalv.Location = new System.Drawing.Point(448, 54);
+            this.comboBoxcalv.Name = "comboBoxcalv";
+            this.comboBoxcalv.Size = new System.Drawing.Size(77, 26);
+            this.comboBoxcalv.TabIndex = 31;
+            this.comboBoxcalv.Text = "Sáng";
             // 
             // label5
             // 
@@ -177,18 +177,18 @@
             this.label5.TabIndex = 28;
             this.label5.Text = "Giới tính";
             // 
-            // comboBox1
+            // comboBoxsex
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxsex.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxsex.FormattingEnabled = true;
+            this.comboBoxsex.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.comboBox1.Location = new System.Drawing.Point(624, 54);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(97, 26);
-            this.comboBox1.TabIndex = 27;
-            this.comboBox1.Text = "Nam";
+            this.comboBoxsex.Location = new System.Drawing.Point(624, 54);
+            this.comboBoxsex.Name = "comboBoxsex";
+            this.comboBoxsex.Size = new System.Drawing.Size(97, 26);
+            this.comboBoxsex.TabIndex = 27;
+            this.comboBoxsex.Text = "Nam";
             // 
             // label8
             // 
@@ -199,15 +199,14 @@
             this.label8.Size = new System.Drawing.Size(42, 20);
             this.label8.TabIndex = 26;
             this.label8.Text = "Vị trí";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // textBox5
+            // tbmanv
             // 
-            this.textBox5.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(97, 57);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(110, 21);
-            this.textBox5.TabIndex = 25;
+            this.tbmanv.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbmanv.Location = new System.Drawing.Point(97, 57);
+            this.tbmanv.Name = "tbmanv";
+            this.tbmanv.Size = new System.Drawing.Size(110, 21);
+            this.tbmanv.TabIndex = 25;
             // 
             // label4
             // 
@@ -239,37 +238,37 @@
             this.label1.TabIndex = 19;
             this.label1.Text = "SĐT";
             // 
-            // textBox4
+            // tbsdt
             // 
-            this.textBox4.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(276, 57);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(108, 21);
-            this.textBox4.TabIndex = 18;
+            this.tbsdt.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbsdt.Location = new System.Drawing.Point(276, 57);
+            this.tbsdt.Name = "tbsdt";
+            this.tbsdt.Size = new System.Drawing.Size(108, 21);
+            this.tbsdt.TabIndex = 18;
             // 
-            // textBox1
+            // tbtennv
             // 
-            this.textBox1.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(97, 16);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(110, 21);
-            this.textBox1.TabIndex = 9;
+            this.tbtennv.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbtennv.Location = new System.Drawing.Point(97, 16);
+            this.tbtennv.Name = "tbtennv";
+            this.tbtennv.Size = new System.Drawing.Size(110, 21);
+            this.tbtennv.TabIndex = 9;
             // 
-            // textBox3
+            // tbcmnd
             // 
-            this.textBox3.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(275, 18);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(108, 21);
-            this.textBox3.TabIndex = 15;
+            this.tbcmnd.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbcmnd.Location = new System.Drawing.Point(275, 18);
+            this.tbcmnd.Name = "tbcmnd";
+            this.tbcmnd.Size = new System.Drawing.Size(108, 21);
+            this.tbcmnd.TabIndex = 15;
             // 
-            // textBox2
+            // tbluong
             // 
-            this.textBox2.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(624, 17);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(97, 21);
-            this.textBox2.TabIndex = 14;
+            this.tbluong.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbluong.Location = new System.Drawing.Point(624, 17);
+            this.tbluong.Name = "tbluong";
+            this.tbluong.Size = new System.Drawing.Size(97, 21);
+            this.tbluong.TabIndex = 14;
             // 
             // label3
             // 
@@ -307,10 +306,12 @@
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(56)))), ((int)(((byte)(44)))));
             this.dataGridView1.Location = new System.Drawing.Point(17, 9);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(727, 264);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseClick);
             // 
-            // qlnv
+            // EmployeeManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -318,8 +319,9 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "qlnv";
+            this.Name = "EmployeeManagement";
             this.Size = new System.Drawing.Size(760, 428);
+            this.Load += new System.EventHandler(this.EmployeeManagement_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -338,21 +340,21 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbsdt;
+        private System.Windows.Forms.TextBox tbtennv;
+        private System.Windows.Forms.TextBox tbcmnd;
+        private System.Windows.Forms.TextBox tbluong;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbmanv;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBoxsex;
+        private System.Windows.Forms.ComboBox comboBoxvitri;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxcalv;
     }
 }

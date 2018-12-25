@@ -41,21 +41,12 @@ namespace uiuiui
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+       
+
+        private void imgb_Exit_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-        /* private void Form3_Shown(object sender, EventArgs e)
- {
-
-     bunifuVScrollBar1.Maximum = 231;
-     bunifuVScrollBar1.ThumbLength = 50;
-
- */
+     
     }
 }
