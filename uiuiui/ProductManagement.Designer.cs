@@ -34,9 +34,9 @@
             this.KhinsertBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbTenSP = new System.Windows.Forms.TextBox();
+            this.tbgiaSP = new System.Windows.Forms.TextBox();
+            this.tbmaSP = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -72,6 +72,7 @@
             this.KHdeleteBtn.TabIndex = 2;
             this.KHdeleteBtn.Text = "Xóa SP";
             this.KHdeleteBtn.UseVisualStyleBackColor = true;
+            this.KHdeleteBtn.Click += new System.EventHandler(this.KHdeleteBtn_Click);
             // 
             // KhupdateBtn
             // 
@@ -84,6 +85,7 @@
             this.KhupdateBtn.TabIndex = 1;
             this.KhupdateBtn.Text = "Edit SP";
             this.KhupdateBtn.UseVisualStyleBackColor = true;
+            this.KhupdateBtn.Click += new System.EventHandler(this.KhupdateBtn_Click);
             // 
             // KhinsertBtn
             // 
@@ -101,15 +103,14 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.tbTenSP);
+            this.panel2.Controls.Add(this.tbgiaSP);
+            this.panel2.Controls.Add(this.tbmaSP);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Enabled = false;
             this.panel2.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(0, 50);
             this.panel2.Name = "panel2";
@@ -129,29 +130,29 @@
             this.comboBox1.TabIndex = 8;
             this.comboBox1.Text = "CF Traditional";
             // 
-            // textBox1
+            // tbTenSP
             // 
-            this.textBox1.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(174, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(183, 21);
-            this.textBox1.TabIndex = 0;
+            this.tbTenSP.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTenSP.Location = new System.Drawing.Point(174, 19);
+            this.tbTenSP.Name = "tbTenSP";
+            this.tbTenSP.Size = new System.Drawing.Size(183, 21);
+            this.tbTenSP.TabIndex = 0;
             // 
-            // textBox3
+            // tbgiaSP
             // 
-            this.textBox3.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(521, 19);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(183, 21);
-            this.textBox3.TabIndex = 7;
+            this.tbgiaSP.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbgiaSP.Location = new System.Drawing.Point(521, 19);
+            this.tbgiaSP.Name = "tbgiaSP";
+            this.tbgiaSP.Size = new System.Drawing.Size(183, 21);
+            this.tbgiaSP.TabIndex = 7;
             // 
-            // textBox2
+            // tbmaSP
             // 
-            this.textBox2.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(521, 51);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(183, 21);
-            this.textBox2.TabIndex = 6;
+            this.tbmaSP.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbmaSP.Location = new System.Drawing.Point(521, 51);
+            this.tbmaSP.Name = "tbmaSP";
+            this.tbmaSP.Size = new System.Drawing.Size(183, 21);
+            this.tbmaSP.TabIndex = 6;
             // 
             // label4
             // 
@@ -204,15 +205,19 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(56)))), ((int)(((byte)(44)))));
             this.dataGridView1.Location = new System.Drawing.Point(17, 9);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(727, 264);
             this.dataGridView1.TabIndex = 0;
+ 
+            this.dataGridView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseClick);
             // 
-            // qlkh
+            // ProductManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -220,8 +225,9 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "qlkh";
+            this.Name = "ProductManagement";
             this.Size = new System.Drawing.Size(760, 428);
+            this.Load += new System.EventHandler(this.ProductManagement_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -239,9 +245,9 @@
         private System.Windows.Forms.Button KhupdateBtn;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbTenSP;
+        private System.Windows.Forms.TextBox tbgiaSP;
+        private System.Windows.Forms.TextBox tbmaSP;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
