@@ -93,6 +93,22 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BCmonthly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCmonthly.Designer.cs">
+      <DependentUpon>BCmonthly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoffeeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoffeeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NEWDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NEWDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="YearReport.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -131,6 +147,9 @@
     <Compile Include="EmployeeManagement.Designer.cs">
       <DependentUpon>EmployeeManagement.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BCmonthly.resx">
+      <DependentUpon>BCmonthly.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="YearReport.resx">
       <DependentUpon>YearReport.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +177,28 @@
     <EmbeddedResource Include="EmployeeManagement.resx">
       <DependentUpon>EmployeeManagement.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="CoffeeDataSet.xsc">
+      <DependentUpon>CoffeeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CoffeeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CoffeeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CoffeeDataSet.xss">
+      <DependentUpon>CoffeeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NEWDataSet.xsc">
+      <DependentUpon>NEWDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NEWDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NEWDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NEWDataSet.xss">
+      <DependentUpon>NEWDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

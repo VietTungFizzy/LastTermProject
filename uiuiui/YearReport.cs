@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 namespace uiuiui
 {
 
@@ -28,9 +28,21 @@ namespace uiuiui
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
+        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-GHHO2NF;Initial Catalog=Coffee;Integrated Security=True");
 
+        private void YearReport_Load(object sender, EventArgs e)
+        {
+           
+            this.chartYearly.Series["Doanh thu theo tháng"].Points.AddXY("t6", 32424);
+            this.chartYearly.Series["Doanh thu theo tháng"].Points.AddXY("t7", 54434);
+            this.chartYearly.Series["Doanh thu theo tháng"].Points.AddXY("t8", 6567);
+          
+        }
+
+        private void xemTKmonthlyBtn_Click(object sender, EventArgs e)
+        {
+            BCmonthly a = new BCmonthly();
+            a.Show();
         }
     }
 }

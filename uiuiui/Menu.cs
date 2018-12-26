@@ -47,20 +47,37 @@ namespace uiuiui
 
         private void bcnBtn_Click(object sender, EventArgs e)
         {
-            //slider.Left = ((Bunifu.Framework.UI.BunifuFlatButton)sender).Left;
-            //slider.Width = ((Bunifu.Framework.UI.BunifuFlatButton)sender).Width;
+            slider.Left = ((Bunifu.Framework.UI.BunifuFlatButton)sender).Left;
+            slider.Width = ((Bunifu.Framework.UI.BunifuFlatButton)sender).Width;
 
-            //if (!panel1.Controls.Contains(bcn.Baocaonam))
-            //{
-            //    panel1.Controls.Add(bcn.Baocaonam);
-            //    bcn.Baocaonam.BringToFront();
-            //}
-            //else
-            //    bcn.Baocaonam.BringToFront();
+            if (!panel1.Controls.Contains(YearReport.Baocaonam))
+            {
+                panel1.Controls.Add(YearReport.Baocaonam);
+                YearReport.Baocaonam.BringToFront();
+            }
+            else
+                YearReport.Baocaonam.BringToFront();
 
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+         
+            if (!panel1.Controls.Contains(EmployeeManagement.Nhanvien))
+            {
+                panel1.Controls.Add(EmployeeManagement.Nhanvien);
+                EmployeeManagement.Nhanvien.BringToFront();
+            }
+            else
+                EmployeeManagement.Nhanvien.BringToFront();
+        }
+
+        private void imgb_Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

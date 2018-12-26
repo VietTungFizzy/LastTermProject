@@ -22,40 +22,104 @@ namespace uiuiui
             Application.Exit();
         }
 
-        private void textBox1_Enter(object sender, EventArgs e)
+
+        private void imgb_Exit_Click(object sender, EventArgs e)
         {
-            if(textBox1.Text=="Tìm kiếm")
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int SoTienNhan = Int32.Parse(tbNhantien.Text);
+            int Tongtien = Int32.Parse(tongtienLbl.Text);
+            int a = SoTienNhan - Tongtien;
+            lbTienThua.Text = a.ToString();
+        }
+
+        private void bunifuImageButton3_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Add("Phin Sua");
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int index = e.RowIndex;
+            
+            switch(dataGridView1.Rows[index].Cells[0].Value)
             {
-                textBox1.Text = "";
-                textBox1.ForeColor = Color.Black;
+                case "Phin Sua":
+                    dataGridView1.Rows[index].Cells[3].Value = 59000 * Convert.ToInt32(dataGridView1.Rows[index].Cells[2].Value);
+                    int temp = Convert.ToInt32(tongtienLbl.Text);
+                    temp += Convert.ToInt32(dataGridView1.Rows[index].Cells[3].Value);
+                    tongtienLbl.Text = temp.ToString();
+                    break;
+                case "Phin Den":
+                    dataGridView1.Rows[index].Cells[3].Value = 59000 * Convert.ToInt32(dataGridView1.Rows[index].Cells[2].Value);
+                    int temp1 = Convert.ToInt32(tongtienLbl.Text);
+                    temp1 += Convert.ToInt32(dataGridView1.Rows[index].Cells[3].Value);
+                    tongtienLbl.Text = temp1.ToString();
+                    break;
+                case "Mocha":
+                    dataGridView1.Rows[index].Cells[3].Value = 59000 * Convert.ToInt32(dataGridView1.Rows[index].Cells[2].Value);
+                    int temp2 = Convert.ToInt32(tongtienLbl.Text);
+                    temp2 += Convert.ToInt32(dataGridView1.Rows[index].Cells[3].Value);
+                    tongtienLbl.Text = temp2.ToString();
+                    break;
+                case "Latte":
+                    dataGridView1.Rows[index].Cells[3].Value = 59000 * Convert.ToInt32(dataGridView1.Rows[index].Cells[2].Value);
+                    int temp3 = Convert.ToInt32(tongtienLbl.Text);
+                    temp3 += Convert.ToInt32(dataGridView1.Rows[index].Cells[3].Value);
+                    tongtienLbl.Text = temp3.ToString();
+                    break;
+                case "Caramel Macchiato":
+                    dataGridView1.Rows[index].Cells[3].Value = 89000 * Convert.ToInt32(dataGridView1.Rows[index].Cells[2].Value);
+                    int temp4 = Convert.ToInt32(tongtienLbl.Text);
+                    temp4 += Convert.ToInt32(dataGridView1.Rows[index].Cells[3].Value);
+                    tongtienLbl.Text = temp4.ToString();
+                    break;
+                case "Cappuccino":
+                    dataGridView1.Rows[index].Cells[3].Value = 79000 * Convert.ToInt32(dataGridView1.Rows[index].Cells[2].Value);
+                    int temp5 = Convert.ToInt32(tongtienLbl.Text);
+                    temp5 += Convert.ToInt32(dataGridView1.Rows[index].Cells[3].Value);
+                    tongtienLbl.Text = temp5.ToString();
+                    break;
+                case "Espresso":
+                    dataGridView1.Rows[index].Cells[3].Value = 69000 * Convert.ToInt32(dataGridView1.Rows[index].Cells[2].Value);
+                    int temp6 = Convert.ToInt32(tongtienLbl.Text);
+                    temp6 += Convert.ToInt32(dataGridView1.Rows[index].Cells[3].Value);
+                    tongtienLbl.Text = temp6.ToString();
+                    break;
             }
-
         }
 
-        private void textBox1_Leave(object sender, EventArgs e)
+        private void bunifuImageButton5_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "")
-            {
-                textBox1.Text = "Tìm kiếm";
-                textBox1.ForeColor = Color.Black;
-            }
+            dataGridView1.Rows.Add("Phin Den");
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void bunifuImageButton6_Click(object sender, EventArgs e)
         {
-
+            dataGridView1.Rows.Add("Mocha");
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void bunifuImageButton7_Click(object sender, EventArgs e)
         {
-
+            dataGridView1.Rows.Add("Latte");
         }
-        /* private void Form3_Shown(object sender, EventArgs e)
- {
 
-     bunifuVScrollBar1.Maximum = 231;
-     bunifuVScrollBar1.ThumbLength = 50;
+        private void bunifuImageButton8_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Add("Caramel Macchiato");
+        }
 
- */
+        private void bunifuImageButton4_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Add("Cappuccino");
+        }
+
+        private void bunifuImageButton9_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Add("Expresso");
+        }
     }
 }
