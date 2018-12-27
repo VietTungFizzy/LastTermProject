@@ -54,8 +54,8 @@ namespace uiuiui
 
         private void KhupdateBtn_Click(object sender, EventArgs e)
         {
-           
-            string query = "update PRODUCTS set TENSP='" + tbTenSP.Text + "',GIA='" + tbgiaSP.Text + "',DANHMUC='" + comboBox1.Text + "'where  MSNV='" + tbmaSP.Text + "' ";
+
+            string query = "update PRODUCTS set TENSP='" + tbTenSP.Text + "',GIA='" + tbgiaSP.Text + "',DANHMUC='" + comboBox1.Text + "'where  MASP='" + tbmaSP.Text + "' ";
             conn.Open();
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();

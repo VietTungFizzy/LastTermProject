@@ -43,7 +43,7 @@ namespace uiuiui
         }
         private void KhupdateBtn_Click(object sender, EventArgs e)
         {
-            string query = "update EMPLOYE set HOTEN='" + tbtennv.Text + "',CMND='" + tbcmnd.Text + "',GIOITINH='" + comboBoxsex.Text + "',DT='" + tbsdt.Text + "',LUONG='" + tbluong.Text + "',CALV='" + comboBoxcalv.Text + "',CHUCVU='" + comboBoxvitri.Text + "' where MANV='"+tbmanv.Text+"'";
+            string query = "update EMPLOYE set HOTEN='" + tbtennv.Text + "',CMND='" + tbcmnd.Text + "',GIOITINH='" + comboBoxsex.Text + "',DT='" + tbsdt.Text + "',LUONG='" + tbluong.Text + "',CALV='" + comboBoxcalv.Text + "',CHUCVU='" + comboBoxvitri.Text + "' where MSNV='"+tbmanv.Text+"'";
             conn.Open();
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
